@@ -46,8 +46,8 @@
 </template>
 
 <script>
-import * as utilsModule from "tns-core-modules/utils/utils";
-import firebase from "nativescript-plugin-firebase";
+import * as utilsModule from "@nativescript/core/utils/utils";
+import { firebase } from '@nativescript/firebase'
 
 export default {
   name: "Home",

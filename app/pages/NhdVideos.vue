@@ -14,7 +14,7 @@
 </template>
 
 <script>
-  import * as utilsModule from 'tns-core-modules/utils/utils'
+  import * as utilsModule from '@nativescript/core/utils/utils'
 
   export default {
     name: 'NhdVideos',

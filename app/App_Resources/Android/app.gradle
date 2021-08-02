@@ -14,7 +14,11 @@ android {
     google()
     jcenter()
   }
-} 
+
+  project.ext {
+    googlePlayServicesVersion = "18.0.0"
+  }
+}
 
 def settingsGradlePath
 
@@ -30,3 +34,5 @@ if(settingsGradleFile.exists())
 {
     apply from: settingsGradleFile;
 }
+
+apply plugin: 'com.google.gms.google-services'

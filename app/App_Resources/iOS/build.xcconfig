@@ -3,6 +3,6 @@
 CODE_SIGN_IDENTITY = iPhone Distribution;
 // To build for device with Xcode 8 you need to specify your development team. More info: https://developer.apple.com/library/prerelease/content/releasenotes/DeveloperTools/RN-Xcode/Introduction.html
 DEVELOPMENT_TEAM = 8BJFT6A282;
-PROVISIONING_PROFILE = be82990f-bd65-41f9-8c8f-c49a4d348078;
+PROVISIONING_PROFILE = 26b4dd88-a201-42e8-be9e-02f209baf5b0;
 ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

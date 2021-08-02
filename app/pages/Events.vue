@@ -26,10 +26,10 @@
 </template>
 
 <script>
-import * as utilsModule from "tns-core-modules/utils/utils";
+import * as utilsModule from "@nativescript/core/utils/utils";
 import * as Calendar from "nativescript-calendar";
-import { Toasty, ToastPosition } from "nativescript-toasty";
-import firebase from "nativescript-plugin-firebase";
+import { Toasty, ToastPosition } from "@triniwiz/nativescript-toasty";
+import { firebase } from '@nativescript/firebase'
 
 export default {
   name: "Events",

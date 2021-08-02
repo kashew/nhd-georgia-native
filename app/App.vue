@@ -28,10 +28,8 @@
         </StackLayout>
       </ScrollView>
 
-      <Frame ~mainContent>
-        <component
-          :is="currentPage"
-          @update-current-page="handleUpdateCurrentPage"></component>
+      <Frame id="mainContent" ~mainContent>
+        <Home />
       </Frame>
     </RadSideDrawer>
   </Page>
@@ -39,11 +37,16 @@
 
 <script>
   import routes from '~/router'
-  import firebase from 'nativescript-plugin-firebase'
-  import * as utilsModule from 'tns-core-modules/utils/utils'
-  import * as email from 'nativescript-email'
+  import Home from '~/pages/Home'
+  import { firebase } from '@nativescript/firebase'
+  import * as utilsModule from '@nativescript/core/utils/utils'
+  import * as email from '@nativescript/email'
 
   export default {
+    components: {
+      Home
+    },
+
     data() {
       return {
         routes,
@@ -51,12 +54,20 @@
       }
     },
 
+    computed: {
+      getCurrentPage () {
+        return this.currentPage
+      }
+    },
+
     methods: {
       goToPage (pageComponent) {
+        console.log(`goToPage: ${pageComponent.name}`)
         this.logEvent(pageComponent.name)
 
         if (pageComponent.name !== 'ContactUs') {
           this.currentPage = pageComponent
+          this.$navigateTo(pageComponent, { frame: "mainContent" })
         } else {
           this.sendEmail()
         }
@@ -85,6 +96,7 @@
       },
 
       handleUpdateCurrentPage: function (e) {
+        console.log(`handleUpdateCurrentPage: ${e.name}`)
         this.logEvent(e.name)
       },
 

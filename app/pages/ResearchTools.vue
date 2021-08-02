@@ -16,7 +16,7 @@
 </template>
 
 <script>
-  import view from 'tns-core-modules/ui/core/view'
+  import view from '@nativescript/core/ui/core/view'
 
   export default {
     name: 'ResearchTools',

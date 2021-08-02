@@ -10,9 +10,9 @@
               <Label text="Theme" class="font-weight-bold" />
               <Label textWrap="true" class="m-b-20" text="Start your NHD journey by reviewing the 2020-2021 theme book and rule book.  This year’s theme is “Communication in History”" />
 
-              <Button text="2021 Theme Book" class="nt-button -primary -rounded-lg font-sm m-b-20" @tap="openThemeBook()" />
-              <Button text="2021 NHD Rule Book" class="nt-button -primary -rounded-lg font-sm m-b-20" @tap="openRuleBook()" />
-              <Button text="2021 NHD Theme Narrative" class="nt-button -primary -rounded-lg font-sm" @tap="openThemeNarrative()" />
+              <Button text="2022 Theme Book" class="nt-button -primary -rounded-lg font-sm m-b-20" @tap="openThemeBook()" />
+              <Button text="2022 NHD Rule Book" class="nt-button -primary -rounded-lg font-sm m-b-20" @tap="openRuleBook()" />
+              <Button text="2022 NHD Theme Narrative" class="nt-button -primary -rounded-lg font-sm" @tap="openThemeNarrative()" />
             </StackLayout>
           </ScrollView>
         </TabViewItem>
@@ -41,8 +41,8 @@
 </template>
 
 <script>
-  import * as utilsModule from 'tns-core-modules/utils/utils'
-  import { knownFolders, path } from 'tns-core-modules/file-system'
+  import * as utilsModule from '@nativescript/core/utils/utils'
+  import { knownFolders, path } from '@nativescript/core/file-system'
 
   export default {
     name: 'GettingStarted',
@@ -82,6 +82,12 @@
             url: 'https://primarysourcenexus.org/2014/11/nhd-2015-selecting-topic-history-project',
             asset: null,
             text: 'Selecting a Topic for NHD'
+          },
+          {
+            name: 'GettingStarted_DebateDiplomacy',
+            url: null,
+            asset: '/assets/pdfs/NhdDebateDiplomacy.pdf',
+            text: 'Debate & Diplomacy in History'
           }
         ]
       }
