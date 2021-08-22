@@ -1,1 +1,6 @@
-{"appId":"net.kashew.nhd.ga","minSdkVersion":null,"targetSdkVersion":null}
+{
+  "appId": "net.kashew.nhd.ga",
+  "minSdkVersion": null,
+  "targetSdkVersion": null,
+  "multiDexEnabled": true
+}

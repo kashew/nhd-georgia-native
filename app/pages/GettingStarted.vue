@@ -8,7 +8,7 @@
               <Image src="~/assets/images/theme-logo.png" width="70%" class="m-b-20" />
 
               <Label text="Theme" class="font-weight-bold" />
-              <Label textWrap="true" class="m-b-20" text="Start your NHD journey by reviewing the 2020-2021 theme book and rule book.  This year’s theme is “Communication in History”" />
+              <Label textWrap="true" class="m-b-20" text="Start your NHD journey by reviewing the 2021-2022 theme book.  This year’s theme is “Debate &amp; Diplomacy in History”" />
 
               <Button text="2022 Theme Book" class="nt-button -primary -rounded-lg font-sm m-b-20" @tap="openThemeBook()" />
               <Button text="2022 NHD Rule Book" class="nt-button -primary -rounded-lg font-sm m-b-20" @tap="openRuleBook()" />

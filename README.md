@@ -37,6 +37,9 @@ tns build ios --release --provision be82990f-bd65-41f9-8c8f-c49a4d348078 --for-d
 
 # Publish IPA file to the App Store
 tns publish ios mpatricks@gmail.com '<password>' --appleApplicationSpecificPassword '<app-specific-password>' --ipa platforms/ios/build/Release-iphoneos/nhdgeorgianative.ipa
+
+# Publish to App Store via XCode
+XCode > Product > Archive
 ```
 
 ### Android

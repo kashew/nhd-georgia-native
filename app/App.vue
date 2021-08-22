@@ -24,6 +24,7 @@
           <StackLayout orientation="horizontal" horizontalAlignment="center" class="m-t-30">
             <Image src="~/assets/images/facebook-logo.png" width="20%" class="m-20" @tap="launchFacebook()" />
             <Image src="~/assets/images/twitter-logo.png" width="20%" class="m-20" @tap="launchTwitter()" />
+            <Image src="~/assets/images/instagram-logo.png" width="20%" class="m-20" @tap="launchInstagram()" />
           </StackLayout>
         </StackLayout>
       </ScrollView>
@@ -93,6 +94,11 @@
       launchFacebook () {
         this.logEvent('Facebook')
         utilsModule.openUrl('https://www.facebook.com/NHDatLaGrangeCollege')
+      },
+
+      launchInstagram () {
+        this.logEvent('Instagram')
+        utilsModule.openUrl('https://www.instagram.com/nhdgeorgia')
       },
 
       handleUpdateCurrentPage: function (e) {
